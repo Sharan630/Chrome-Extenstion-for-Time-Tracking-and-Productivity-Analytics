@@ -106,4 +106,6 @@ Unproductive Sites:
 - No external servers or data collection
 - Complete control over your data
 
+![Image](https://github.com/user-attachments/assets/55db73a0-af65-4416-9a15-977fca0c6b10)
+
 <p align="center">Built for better productivity and time management</p>
