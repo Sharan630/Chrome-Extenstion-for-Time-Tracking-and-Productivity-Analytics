@@ -77,6 +77,25 @@ Unproductive Sites:
 - `chrome.runtime`: Message passing and background processing
 - `chrome.alarms`: Scheduled tasks (weekly reports)
 
+  ### Key Features Implementation
+1. **Time Tracking**
+   ```javascript
+   // Updates every second for active tabs
+   setInterval(async () => {
+     if (isTracking && currentTabId) {
+       await updateTimeSpent(currentTabId);
+     }
+   }, 1000);
+   ```
+
+2. **Website Classification**
+   ```javascript
+   function classifyWebsite(domain) {
+     if (productiveDomains.includes(domain)) return 'productive';
+     if (unproductiveDomains.includes(domain)) return 'unproductive';
+     return 'neutral';
+   }
+
 ### Reading the Dashboard
 - **Today's Overview**: Shows time spent in each category
 - **Weekly Score**: Overall productivity percentage
