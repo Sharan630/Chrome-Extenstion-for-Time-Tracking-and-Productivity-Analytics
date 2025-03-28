@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TimeTracker Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      width: 400px;
+      height: 500px;
+      padding: 1rem;
+    }
+    .chart-container {
+      height: 200px;
+      margin: 1rem 0;
+    }
+    .time-display {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto">
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">TimeTracker Pro</h1>
+
+    <div class="bg-white rounded-lg shadow p-3 mb-4">
+      <h2 class="text-lg font-semibold mb-2">Today's Overview</h2>
+      <div class="grid grid-cols-3 gap-2">
+        <div class="text-center p-2 bg-green-50 rounded">
+          <div class="text-green-600 font-bold time-display" id="productiveTime">0h 0m</div>
+          <div class="text-xs text-gray-600">Productive</div>
+        </div>
+        <div class="text-center p-2 bg-red-50 rounded">
+          <div class="text-red-600 font-bold time-display" id="unproductiveTime">0h 0m</div>
+          <div class="text-xs text-gray-600">Unproductive</div>
+        </div>
+        <div class="text-center p-2 bg-blue-50 rounded">
+          <div class="text-blue-600 font-bold time-display" id="neutralTime">0h 0m</div>
+          <div class="text-xs text-gray-600">Neutral</div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="bg-white rounded-lg shadow p-4 mb-4">
+      <h2 class="text-lg font-semibold mb-2">Weekly Productivity Score</h2>
+      <div class="flex items-center justify-center">
+        <div class="text-4xl font-bold text-green-600" id="productivityScore">0%</div>
+      </div>
+    </div>
+
+
+    <div class="bg-white rounded-lg shadow p-4">
+      <h2 class="text-lg font-semibold mb-2">Top Sites</h2>
+      <div id="topSites" class="space-y-2">
+
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

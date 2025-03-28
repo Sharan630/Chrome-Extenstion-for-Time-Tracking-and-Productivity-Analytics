@@ -1,0 +1,11 @@
+{
+  "name": "timetracker-icons",
+  "version": "1.0.0",
+  "description": "Icon generator for TimeTracker Pro extension",
+  "scripts": {
+    "generate-icons": "node generate-icons.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.1"
+  }
+} 
